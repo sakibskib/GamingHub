@@ -67,3 +67,223 @@ body.dark {
   background-color: #000;
   color: #fff;
 }
+/* App.css */
+
+/* General Styling */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1 {
+  color: #00ff99;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Main Container */
+.container {
+  width: 100vw;
+  max-width: 90vw;
+  margin: auto;
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #2c2c2c;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  
+}
+
+/* Search and Sort */
+.search-sort {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.search-sort input,
+.search-sort select,
+.search-sort button {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+.search-sort input {
+  width: 90%;
+}
+
+.search-sort button {
+  background-color: #00ff99;
+  color: #1e1e1e;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-sort button:hover {
+  background-color: #00cc7a;
+}
+
+/* Post Cards */
+.post-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post-card {
+  background-color: #3c3c3c;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.post-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.post-card h3 {
+  margin: 0;
+  color: #00ff99;
+}
+
+.post-card p {
+  margin: 5px 0;
+}
+
+.post-card a {
+  text-decoration: none;
+  color: #00cc7a;
+  font-weight: bold;
+}
+
+/* Buttons */
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #00ff99;
+  border: none;
+  border-radius: 5px;
+  color: #1e1e1e;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #00cc7a;
+}
+
+/* Center Link Button */
+.create-post-btn {
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+}
+.edit-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin: 0 auto;
+  width: 90%; /* Adjust to fit most of the screen */
+  max-width: 1200px; /* Limit maximum width on larger screens */
+  background-color: #2c2c2c;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+  color: #f9f9f9;
+}
+
+.edit-container h1 {
+  margin-bottom: 20px;
+  color: #00ff99;
+  text-align: left; /* Align the heading with input fields */
+  width: 100%;
+}
+
+.edit-container input,
+.edit-container textarea {
+  width: 100%; /* Take full width of the container */
+  padding: 15px; /* Increase padding for better usability */
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3c3c3c;
+  color: #f9f9f9;
+  font-size: 16px;
+}
+
+.edit-container input:focus,
+.edit-container textarea:focus {
+  outline: none;
+  background-color: #444;
+  border: 1px solid #00ff99;
+}
+
+.edit-container textarea {
+  resize: none; /* Prevent resizing for consistent appearance */
+}
+
+.edit-container button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.edit-container button.save {
+  background-color: #00ff99;
+  color: #1e1e1e;
+}
+
+.edit-container button.save:hover {
+  background-color: #00cc7a;
+}
+
+.edit-container button.cancel {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.edit-container button.cancel:hover {
+  background-color: #d32f2f;
+}
+.navigation {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: #1e1e1e;
+  padding: 10px;
+  text-align: left;
+  z-index: 1000; /* Ensure it stays above content */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.home-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #00ff99;
+  border: none;
+  border-radius: 5px;
+  color: #1e1e1e;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #00cc7a;
+}

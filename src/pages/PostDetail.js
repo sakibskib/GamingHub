@@ -203,7 +203,7 @@ function PostDetail() {
   return (
     <div>
       {isEditing ? (
-        <div>
+        <div className="edit-container">
           <h1>Edit Post</h1>
           <input
             type="text"

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { supabase } from '../supabase';
+import { getUserId } from '../supabase';
 
 function CreatePost() {
   const [title, setTitle] = useState('');
@@ -9,13 +10,16 @@ function CreatePost() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await supabase.from('posts').insert({
+    const userId = getUserId();
+    const { error } = await supabase.from('posts').insert({
       title,
       content,
       tags: tags.split(','),
       image_url: imageUrl,
+      user_id: userId,
     });
-    alert('Post created!');
+    if (error) console.error(error);
+    else alert('Post created!');
   };
 
   return (

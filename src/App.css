@@ -59,3 +59,11 @@ button {
   padding: 5px 10px;
   cursor: pointer;
 }
+body.light {
+  background-color: #fff;
+  color: #000;
+}
+body.dark {
+  background-color: #000;
+  color: #fff;
+}

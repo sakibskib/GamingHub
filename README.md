@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5efc920f-a1f7-4401-94aa-5489292ed491/deploy-status)](https://app.netlify.com/sites/gaminghub-sakib/deploys)
+
 # Web Development Final Project - *GamingHub*
 
 Submitted by: **Sheikh Shihabun Sakib**
